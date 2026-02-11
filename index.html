@@ -1425,21 +1425,21 @@
         function generateUnitsQuestions() {
             const unitsBank = [
                 { quantity: 'Force', unit: 'N', wrongUnits: ['kg', 'm/s', 'J'] },
-                { quantity: 'Mass', unit: 'kg', wrongUnits: ['N', 'm/s', 'g/cm³'] },
-                { quantity: 'Acceleration', unit: 'm/s²', wrongUnits: ['m/s', 'N', 'Hz'] },
-                { quantity: 'Velocity', unit: 'm/s', wrongUnits: ['m/s²', 'Hz', 'N'] },
-                { quantity: 'Distance', unit: 'm', wrongUnits: ['s', 'm/s', 'cm³'] },
-                { quantity: 'Time', unit: 's', wrongUnits: ['m', 'Hz', 'N'] },
+                { quantity: 'Mass', unit: 'kg', wrongUnits: ['N', 'm/s', 'J'] },
+                { quantity: 'Acceleration', unit: 'm/s²', wrongUnits: ['m/s', 'N', 'kg'] },
                 { quantity: 'Work', unit: 'J', wrongUnits: ['W', 'N', 'kg'] },
-                { quantity: 'Power', unit: 'W', wrongUnits: ['J', 'N', 's'] },
-                { quantity: 'Momentum', unit: 'kg⋅m/s', wrongUnits: ['N', 'J', 'm/s'] },
                 { quantity: 'Kinetic Energy', unit: 'J', wrongUnits: ['W', 'N', 'kg'] },
                 { quantity: 'Potential Energy', unit: 'J', wrongUnits: ['W', 'N', 'kg'] },
-                { quantity: 'Density', unit: 'g/cm³', wrongUnits: ['kg', 'cm³', 'kg/m³'] },
+                { quantity: 'Power', unit: 'W', wrongUnits: ['J', 'N', 'V'] },
+                { quantity: 'Wave Speed', unit: 'm/s', wrongUnits: ['Hz', 'm', 's'] },
                 { quantity: 'Frequency', unit: 'Hz', wrongUnits: ['s', 'm', 'm/s'] },
-                { quantity: 'Period', unit: 's', wrongUnits: ['Hz', 'm', 'N'] },
                 { quantity: 'Wavelength', unit: 'm', wrongUnits: ['Hz', 's', 'm/s'] },
-                { quantity: 'Wave Speed', unit: 'm/s', wrongUnits: ['Hz', 'm', 's'] }
+                { quantity: 'Distance', unit: 'm', wrongUnits: ['s', 'm/s', 'kg'] },
+                { quantity: 'Velocity', unit: 'm/s', wrongUnits: ['m/s²', 'Hz', 'N'] },
+                { quantity: 'Momentum', unit: 'kg⋅m/s', wrongUnits: ['N', 'J', 'm/s'] },
+                { quantity: 'Voltage', unit: 'V', wrongUnits: ['A', 'Ω', 'W'] },
+                { quantity: 'Current', unit: 'A', wrongUnits: ['V', 'Ω', 'W'] },
+                { quantity: 'Resistance', unit: 'Ω', wrongUnits: ['V', 'A', 'W'] }
             ];
 
             // Shuffle and take 10 questions
